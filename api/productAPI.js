@@ -8,6 +8,7 @@ const router = express.Router();
 
 // models
 const product = require("../models/product-Model");
+const CouponModel = require("../models/Coupon-Model");
 
 
 
@@ -36,5 +37,10 @@ router.post("/product", async (req, res) => {
         console.log(e);
     }
 })
+
+
+
+
+
 
 module.exports = router

@@ -4,7 +4,9 @@ const Product_Schema = mongoose.Schema(
     {
         productId: {
             type: Array
+            , required: true
         }
+
     }
 )
 
@@ -32,6 +34,7 @@ const Coupon_Schema = mongoose.Schema(
         },
         code: {
             type: String,
+            unique: true,
             required: true,
 
         },
@@ -63,8 +66,8 @@ const Coupon_Schema = mongoose.Schema(
             default: Date.now(),
             trim: true
         },
-        product: Product_Schema,
-        particulars: Particular
+        product: [Product_Schema],
+        particulars: [Particular]
 
     }
     , { timestamps: true })
