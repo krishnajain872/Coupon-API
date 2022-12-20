@@ -1,0 +1,38 @@
+
+
+{
+  "name":"Diwali Discount",
+  "code":"Diwali2022",
+  "Discount":40,
+  "isPercent":true,
+   "isActive":true,
+   "product":{
+    "productId":["dndads","adak","sdbkjabskd"]
+   }
+,
+  "particulars":{
+    "model":["12e71h"],
+    "brand":["mi"],
+    "user":["krishna"]
+  }
+}
+
+
+
+
+
+{
+  "name":"Diwali Discount",
+  "code":"Diwali2022",
+  "Discount":40,
+  "isPercent":true,
+   "isActive":true,
+   "product":{
+    "productId":["dndads","adak","sdbkjabskd"]
+   }
+,
+  "particulars":{
+    "productDetails":[{"model":"xyz","brand":"Mi"},{"model":"xyz1",brand:"samsung"}]
+    "user":["krishna"]
+  }
+}
