@@ -15,8 +15,7 @@ const Particular = mongoose.Schema(
     {
 
 
-        model: Array,
-        brand: Array,
+        productDetails:Array,
         user: Array
 
 

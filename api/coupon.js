@@ -28,6 +28,20 @@ router.get("/coupon/:id", async (req, res) => {
 		console.log(e);
 	}
 })
+router.get("/couponCode/:code", async (req, res) => {
+	try {
+		console.log(req.params.code);
+		const coupon = await CouponModel.find({
+			code: req.params.code
+		})
+		res.status(202).send(coupon);
+		console.log(coupon);
+
+	} catch (e) {
+		res.status(404).send(e);
+		console.log(e);
+	}
+})
 
 // Coupon POST
 router.post("/coupon", async (req, res) => {
